@@ -5,7 +5,30 @@ This is a project to build a chamber that sterilizes objects using a UV lamp (wa
 Have you ever been bothered by annoying mold or bacteria?
 For example, a dishcloth that won’t lose its smell no matter how much you wash it, a lunchbox that goes bad as soon as you leave it out for a bit, a rubber duck toy that gets moldy the moment you leave it in the bathroom, or culture media that gets contaminated no matter how clean you keep it—I think everyone has struggled with these issues at least once.
 I decided to create this because I wanted to solve those problems.
+## Print settings
+We strongly recommend using a high-strength gyroid for the infill!  
+At the very least, please avoid using weak infills like Lightning. If you accidentally bump it while using it, it will shatter and emit dangerous UV rays, which is extremely hazardous!  
+For the same reason, please set the infill to 25% or higher.  
+Also, since we’ll be using insert nuts, set the number of wall lines to 4 or more.  
+## Assembly Instructions
+1. Wire the components
+Please wire the components according to the wiring diagram. However, leave the wiring between the CCFL inverter and the UVC bulb, as well as the reset button (GPIO 4), unconnected.
+2. Throw the components into the printed box.
+Throw them into the box on the right labeled “Sterilization Chamber” and screw in the rotary encoder and other parts. Be sure to solder the reset button and UVC bulb in place after installing them. Otherwise, you’ll look like an idiot.
+3. Glue the boxes together. For the large box, attach the side with the two small holes; for the small box, attach the side without a wall.
+4. Insert the insert nuts.
+Use a soldering iron or something similar to screw them into the holes. These are located on the bottom of the large lid, the bottom of the large box, the top of the interior, and the back of the small box.
+5. Secure them with screws.
+## Screenshots
+### Prented result (CAD Screenshot)
+![Printed result](./screenshots/mini-3d-2.png)
+### Writing diagram
+![Writing diagram1](./screenshots/schematic1.png)  
+![Writing diagram2](./screenshots/schematic2.png)
 ## BOM
+### **Be sure to select the M3xL4xOD4.5 insert nut!!!**
+You'll need M3 screws that are about 3 mm and 10 mm long. A set might be cheaper.  
+
 | Name            | Quantity | Price(Per piece)$ | URL                                                                                                                      |
 |-----------------|----------|-------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Rotary Encoder  | 1        | 1.78              | https://ja.aliexpress.com/item/1005007644083514.html?spm=a2g0o.productlist.main.1.aa684a7cWfWgml&algo_pvid=a5d4e2c1-c6f6-419c-b877-06dad6f9b13c&algo_exp_id=a5d4e2c1-c6f6-419c-b877-06dad6f9b13c-0&pdp_ext_f=%7B%22order%22%3A%223439%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21JPY%21506%21480%21%21%213.11%212.95%21%402101590d17804052464871541e7159%2112000041630839411%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895%3BpisId%3A5000000208177917&curPageLogUid=kLkPEevGXcVE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007644083514%7C_p_origin_prod%3A&gatewayAdapt=glo2jpn |
@@ -25,3 +48,5 @@ I decided to create this because I wanted to solve those problems.
 | RP2040 Devboard | 1        | 1.69              | https://ja.aliexpress.com/item/1005009068473196.html?spm=a2g0o.productlist.main.2.1be1745bgyU35u&algo_pvid=3ca0c5ee-52e1-4e50-bf01-5993f15822fe&algo_exp_id=3ca0c5ee-52e1-4e50-bf01-5993f15822fe-1&pdp_ext_f=%7B%22order%22%3A%226043%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.49%211.69%21%21%2116.87%2111.47%21%40212e520f17826531886872435e7b41%2112000047802063004%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895&curPageLogUid=b4bWbXUt0rXZ&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009068473196%7C_p_origin_prod%3A |
 | Aluminum tape   | 1        | 1.75              | https://ja.aliexpress.com/item/1005007698325860.html?spm=a2g0o.productlist.main.6.529974acwC9f0d&algo_pvid=2507b385-ea9e-415b-bc55-cad19e296408&algo_exp_id=2507b385-ea9e-415b-bc55-cad19e296408-5&pdp_ext_f=%7B%22order%22%3A%2220167%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%214.34%211.30%21%21%2129.34%218.76%21%40212a70c117826532892983732e36e1%2112000041928542189%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895%3BpisId%3A5000000209933962&curPageLogUid=NMLXIRQ8OLM3&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007698325860%7C_p_origin_prod%3A |
 | 12V AC Adapter  | 1        | 3.65 (US Plug)    | https://ja.aliexpress.com/item/1005010218801366.html?spm=a2g0o.productlist.main.4.67eb6MVW6MVWaY&aem_p4p_detail=2026062806295315032178479000750001629754&algo_pvid=d7c9417a-6af8-4bd8-81dd-725e96e501dd&algo_exp_id=d7c9417a-6af8-4bd8-81dd-725e96e501dd-3&pdp_ext_f=%7B%22order%22%3A%22430%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%215.37%213.60%21%21%215.37%213.60%21%40212e508f17826533938644184eaffc%2112000051565633310%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895&curPageLogUid=0nGxJsjiebPK&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010218801366%7C_p_origin_prod%3A&search_p4p_id=2026062806295315032178479000750001629754_1 |
+| Insert nats     | 14       | 0.122             | https://ja.aliexpress.com/item/1005006071488810.html?spm=a2g0o.productlist.main.4.24d86852XVoX1V&aem_p4p_detail=202606280638084460007511160820001630846&algo_pvid=53926867-d40c-4f69-af78-77b737cd048b&algo_exp_id=53926867-d40c-4f69-af78-77b737cd048b-3&pdp_ext_f=%7B%22order%22%3A%2222631%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.76%212.76%21%21%2118.70%2118.70%21%402101364d17826538883284584e90d4%2112000035595774900%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895&curPageLogUid=p0cj0j0lodBn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006071488810%7C_p_origin_prod%3A&search_p4p_id=202606280638084460007511160820001630846_1 |
+| M3 Screws       | 14       | 0.016921052631579 | https://ja.aliexpress.com/item/1005007399285653.html?spm=a2g0o.productlist.main.4.50df1137xvJ0LF&aem_p4p_detail=202606280713393511859031724950001666285&algo_pvid=92390efd-6222-4c07-a695-4d1a891b3219&algo_exp_id=92390efd-6222-4c07-a695-4d1a891b3219-3&pdp_ext_f=%7B%22order%22%3A%221952%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.75%213.60%21%21%213.75%213.60%21%40212a70c017826560191098038eddc2%2112000040585391783%21sea%21JP%216223408418%21X%211%210%21n_tag%3A-29919%3Bd%3A5b24a229%3Bm03_new_user%3A-29895&curPageLogUid=AYdjmhKSaZRL&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007399285653%7C_p_origin_prod%3A&search_p4p_id=202606280713393511859031724950001666285_1 |
