@@ -2804,285 +2804,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DPST"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_DPST"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Double Pole Single Throw (DPST) Switch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch dual double-pole single-throw OFF-ON"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_DPST_0_0"
-				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 2.794) (xy 1.27 4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -2.286) (xy 1.27 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_DPST_1_1"
-				(rectangle
-					(start -3.175 4.445)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -4061,6 +3782,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 119.38) (xy 76.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "686c54a2-097a-4b67-b536-c02be0c88fe8")
+	)
+	(wire
+		(pts
 			(xy 27.94 91.44) (xy 99.06 91.44)
 		)
 		(stroke
@@ -4128,6 +3859,16 @@
 			(type default)
 		)
 		(uuid "6df3f3a1-ca94-4215-8425-11c5013af5e8")
+	)
+	(wire
+		(pts
+			(xy 76.2 109.22) (xy 99.06 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709f04ba-46a3-4251-881c-7dcec4997245")
 	)
 	(wire
 		(pts
@@ -4271,6 +4012,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 124.46) (xy 76.2 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2e97eb-beec-4957-8e4f-ac634d974432")
+	)
+	(wire
+		(pts
 			(xy 233.68 133.35) (xy 257.81 133.35)
 		)
 		(stroke
@@ -4281,7 +4032,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 36.83) (xy 213.36 36.83)
+			(xy 208.28 36.83) (xy 226.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4318,16 +4069,6 @@
 			(type default)
 		)
 		(uuid "b74016dd-ef6a-4c65-847e-7857116e0cb6")
-	)
-	(wire
-		(pts
-			(xy 223.52 36.83) (xy 226.06 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b97519db-b5d1-4e67-8eca-22749406aade")
 	)
 	(wire
 		(pts
@@ -4378,16 +4119,6 @@
 			(type default)
 		)
 		(uuid "c899f22a-87a0-4bc2-8b2d-538c1433dde1")
-	)
-	(wire
-		(pts
-			(xy 223.52 41.91) (xy 226.06 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ae7de5-9419-41e6-9009-ddcca4b258a7")
 	)
 	(wire
 		(pts
@@ -4511,7 +4242,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 41.91) (xy 213.36 41.91)
+			(xy 208.28 41.91) (xy 226.06 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6969,6 +6700,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 76.2 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8c200b8-3590-4968-9672-760e914c9986")
+		(property "Reference" "#PWR021"
+			(at 76.2 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e179d63-f8a3-472f-942e-fe2691774cb9")
+		)
+		(instances
+			(project "main"
+				(path "/572fe60a-408e-4e3f-8200-64ed478fa3a2"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 53.34 121.92 0)
 		(unit 1)
 		(body_style 1)
@@ -7449,7 +7258,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 166.37 60.96 0)
+		(at 73.66 121.92 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7460,29 +7269,27 @@
 		(fields_autoplaced yes)
 		(uuid "fc8264e2-89f6-4ef7-862e-5dcd7f0766f3")
 		(property "Reference" "BZ1"
-			(at 170.18 59.6899 0)
+			(at 72.9049 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 170.18 62.2299 0)
+			(at 72.9049 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 165.735 58.42 90)
+			(at 74.295 124.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7493,7 +7300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.735 58.42 90)
+			(at 74.295 124.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7504,7 +7311,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 166.37 60.96 0)
+			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7524,92 +7331,6 @@
 			(project "main"
 				(path "/572fe60a-408e-4e3f-8200-64ed478fa3a2"
 					(reference "BZ1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST")
-		(at 218.44 39.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcc74a8f-dbc7-43e2-81a6-9260f126ecf0")
-		(property "Reference" "SW4"
-			(at 218.44 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST"
-			(at 218.44 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Double Pole Single Throw (DPST) Switch"
-			(at 218.44 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4f807d95-11f0-4983-a56c-eb8c83cc7b77")
-		)
-		(pin "4"
-			(uuid "6cb7f859-056e-47ce-ae32-71d176f6d07d")
-		)
-		(pin "1"
-			(uuid "a95e6197-05e0-4985-b00c-e3f311a3ec79")
-		)
-		(pin "3"
-			(uuid "60faa6f8-055d-4f44-9ac7-90fd08262c68")
-		)
-		(instances
-			(project "main"
-				(path "/572fe60a-408e-4e3f-8200-64ed478fa3a2"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
